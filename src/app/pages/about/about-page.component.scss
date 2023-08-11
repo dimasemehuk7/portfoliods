@@ -1,0 +1,22 @@
+.about {
+  padding-top: 60px;
+
+  &__skills{
+    padding-top: 60px;
+    margin-bottom: 40px;
+
+    &-title{
+      margin: 0 auto 15px;
+      color: whitesmoke;
+      font-size: 30px;
+      width: max-content;
+    }
+    &-cards{
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+  }
+}
+

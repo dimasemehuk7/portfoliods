@@ -1,0 +1,71 @@
+.home-top{
+  color: whitesmoke;
+  display: flex;
+
+  &__img-block{
+
+    &>img{
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+
+    }
+  }
+
+  &__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__hello{
+    font-size: 24px;
+  }
+  &__name{
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    //margin-top: 15px;
+    font-size: 50px;
+    background-image: linear-gradient(180deg, #ff9d7a 0, #ff8f83 10%, #ff8089 20%, #ff718d 30%, #ff628d 40%, #f25389 50%, #d34683 60%, #b63c7d 70%, #9e3678 80%, #883174 90%, #752e71 100%)
+  }
+  &__job{
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(90deg, rgb(15, 0, 255) 0%, rgb(255, 143, 131) 13%, rgba(121,9,73,1) 62%, rgba(0,212,255,1) 100%);
+    //margin-top: 8px;
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+  &__description{
+    width: 70%;
+    min-width: 350px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 920px){
+  .home-top{
+    flex-direction: column-reverse;
+
+    &__name{
+      font-size: 40px;
+    }
+    &__job{
+      font-size: 40px;
+    }
+    &__text{
+      margin: 0 auto;
+      text-align: center;
+    }
+    &__img-block {
+      margin: 0 auto;
+    }
+    &__description{
+      width: auto;
+    }
+  }
+
+}

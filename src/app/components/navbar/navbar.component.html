@@ -1,0 +1,36 @@
+<nav class="nav-bar">
+  <app-container>
+    <div class="nav-bar__wrapper">
+      <ul class="nav-bar__icon">
+        <li><a href="/"><span class="unselectable">Ds.</span></a></li>
+      </ul>
+      <ul class="nav-bar__links">
+        <li class="nav-bar__link">
+          <img ngSrc="./assets/icons/home.svg" alt="home" height="20" width="20">
+          <a href="/">Home</a>
+        </li>
+        <li class="nav-bar__link">
+          <img ngSrc="./assets/icons/about.svg" alt="about" height="20" width="20">
+          <a href="/about">About</a>
+        </li>
+        <li class="nav-bar__link">
+          <img ngSrc="./assets/icons/resume.svg" alt="resume" height="20" width="20">
+          <a href="/resume">Resume</a>
+        </li>
+      </ul>
+      <div class="nav-bar__menu">
+        <input hidden="" class="check-icon" id="check-icon" name="check-icon" type="checkbox" (click)="toggleNavList()">
+        <label class="icon-menu" for="check-icon">
+          <div class="bar bar--1"></div>
+          <div class="bar bar--2"></div>
+          <div class="bar bar--3"></div>
+        </label>
+        <ul [ngClass]="{'visible': isNavListVisible}" class="nav-bar__list">
+          <li><a href="/home">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/resume">Resume</a></li>
+        </ul>
+      </div>
+    </div>
+  </app-container>
+</nav>

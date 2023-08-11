@@ -1,0 +1,144 @@
+.nav-bar {
+  background-image: linear-gradient(180deg, #ff9d7a 0, #ff8f83 10%, #ff8089 20%, #ff718d 30%, #ff628d 40%, #f25389 50%, #d34683 60%, #b63c7d 70%, #9e3678 80%, #883174 90%, #752e71 100%);
+  padding: 18px 0;
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__icon {
+    margin-right: 10px;
+
+    li {
+      img {
+        height: 18px;
+      }
+
+      a {
+        text-decoration: none;
+
+        span {
+          font-size: 24px;
+          color: #752e71;
+          font-weight: 800;
+        }
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      position: relative;
+      display: flex;
+      margin-right: 35px;
+      cursor: pointer;
+      align-items: center;
+
+      a {
+        margin-left: 5px;
+        text-decoration: none;
+        font-size: 14px;
+        color: whitesmoke;
+      }
+
+      svg {
+        fill: whitesmoke;
+        height: 18px;
+      }
+    }
+
+    li:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.nav-bar__link:before {
+  bottom: -5px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: whitesmoke;
+  transition: width 0.5s ease, left 0.5s ease;
+  width: 0;
+}
+
+.nav-bar__link:hover:before {
+  width: 100%;
+  left: 0;
+}
+
+.nav-bar__list {
+  transition: opacity 0.6s ease-in-out;
+}
+
+@media screen and (max-width: 920px) {
+  .nav-bar__menu {
+    display: block;
+  }
+
+  .nav-bar__links {
+    display: none;
+  }
+
+  .nav-bar__list {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60px;
+    width: 80%;
+    min-width: 300px;
+    border-radius: 5px;
+    background-image: linear-gradient(to left, rgb(27, 20, 41), rgb(20, 15, 35));
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+
+    &.visible {
+      opacity: 0.8;
+    }
+
+    li {
+      width: fit-content;
+      cursor: pointer;
+      position: relative;
+      margin-bottom: 15px;
+
+      &>a{
+        color: whitesmoke;
+        text-decoration: none;
+      }
+
+      &:before {
+        bottom: -5px;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: whitesmoke;
+        transition: width 0.5s ease 0s, left 0.5s ease 0s;
+        width: 0;
+      }
+
+      &:hover:before {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+}

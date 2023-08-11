@@ -1,0 +1,31 @@
+.pdf-viewer {
+  width: 50em;
+  height: 50em;
+}
+
+@media screen and (max-width: 1000px){
+  .pdf-viewer {
+    width: 35em;
+    height: 35em;
+  }
+
+  @media screen and (max-width: 705px) {
+    .pdf-viewer {
+      width: 25em;
+      height: 35em;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    .pdf-viewer {
+      width: 20em;
+      height: 30em;
+    }
+  }
+  @media screen and (max-width: 410px) {
+    .pdf-viewer {
+      width: 15em;
+      height: 25em;
+    }
+  }
+}

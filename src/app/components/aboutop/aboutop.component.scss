@@ -1,0 +1,45 @@
+.about-top {
+
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 40px;
+    margin: 0 auto;
+    width: max-content;
+  }
+
+  &__text{
+    width: 60%;
+    line-height: 1.6;
+  }
+
+  &__img{
+
+    &>img{
+      width: 350px;
+      height: auto;
+    }
+  }
+}
+@media screen and (max-width: 920px){
+
+  .about-top {
+
+    &__wrapper {
+      flex-direction: column-reverse;
+
+    }
+    &__text{
+      width: 75%;
+      line-height: 1.6;
+    }
+    &__img{
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
