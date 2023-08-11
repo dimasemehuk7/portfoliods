@@ -62,6 +62,12 @@
     }
     &__img-block {
       margin: 0 auto;
+
+      &>img{
+      width: 290px;
+      height: 290px;
+      border-radius: 50%;
+      }
     }
     &__description{
       width: auto;
