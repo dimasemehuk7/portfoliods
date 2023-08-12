@@ -31,16 +31,19 @@
 
     &__wrapper {
       flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
 
     }
     &__text{
-      width: 75%;
+      width: 100%;
       line-height: 1.6;
+      margin: 0 auto;
     }
-    &__img{
+    &__img>img{
       margin: 0 auto;
       width: 280px;
-      height: 280px;
+      height: auto;
     }
   }
 }
