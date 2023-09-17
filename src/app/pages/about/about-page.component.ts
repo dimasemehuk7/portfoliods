@@ -22,7 +22,7 @@ export class AboutPageComponent {
     },
     {
       title: "MongoDb",
-      srcIcon: "/assets/skillsIcons/typescript.svg"
+      srcIcon: "/assets/skillsIcons/mongodb.svg"
     },
     {
       title: "WebPack",
